@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6851A122878C15500AE645E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6851A112878C15500AE645E /* CollectionViewController.swift */; };
+		B6851A1B2878E8DA00AE645E /* clCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6851A192878E8DA00AE645E /* clCollectionViewCell.swift */; };
+		B6851A1C2878E8DA00AE645E /* clCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6851A1A2878E8DA00AE645E /* clCollectionViewCell.xib */; };
 		B6F6865E2877709B0084D2D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F6865D2877709B0084D2D9 /* AppDelegate.swift */; };
 		B6F686602877709B0084D2D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F6865F2877709B0084D2D9 /* SceneDelegate.swift */; };
 		B6F686622877709B0084D2D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F686612877709B0084D2D9 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6851A112878C15500AE645E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		B6851A192878E8DA00AE645E /* clCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6851A1A2878E8DA00AE645E /* clCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = clCollectionViewCell.xib; sourceTree = "<group>"; };
 		B6F6865A2877709B0084D2D9 /* BasicLayoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicLayoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F6865D2877709B0084D2D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F6865F2877709B0084D2D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6851A0F2878C02D00AE645E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B6851A112878C15500AE645E /* CollectionViewController.swift */,
+				B6851A102878C09900AE645E /* Cell */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		B6851A102878C09900AE645E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B6851A192878E8DA00AE645E /* clCollectionViewCell.swift */,
+				B6851A1A2878E8DA00AE645E /* clCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B6F686512877709B0084D2D9 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +90,7 @@
 		B6F6865C2877709B0084D2D9 /* BasicLayoutApp */ = {
 			isa = PBXGroup;
 			children = (
+				B6851A0F2878C02D00AE645E /* CollectionView */,
 				B6F68671287770CE0084D2D9 /* TableView */,
 				B6F6868528779F350084D2D9 /* DetailViewController.swift */,
 				B6F6865D2877709B0084D2D9 /* AppDelegate.swift */,
@@ -159,6 +184,7 @@
 				B6F686762877790A0084D2D9 /* TableViewCell.xib in Resources */,
 				B6F68667287770C00084D2D9 /* Assets.xcassets in Resources */,
 				B6F686652877709B0084D2D9 /* Main.storyboard in Resources */,
+				B6851A1C2878E8DA00AE645E /* clCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +199,11 @@
 				B6F686622877709B0084D2D9 /* ViewController.swift in Sources */,
 				B6F686752877790A0084D2D9 /* TableViewCell.swift in Sources */,
 				B6F6865E2877709B0084D2D9 /* AppDelegate.swift in Sources */,
+				B6851A122878C15500AE645E /* CollectionViewController.swift in Sources */,
 				B6F6868228778B2E0084D2D9 /* TableViewAnimalViewController.swift in Sources */,
 				B6F686602877709B0084D2D9 /* SceneDelegate.swift in Sources */,
 				B6F6868628779F350084D2D9 /* DetailViewController.swift in Sources */,
+				B6851A1B2878E8DA00AE645E /* clCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
