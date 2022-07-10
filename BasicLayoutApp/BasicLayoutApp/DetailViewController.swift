@@ -32,8 +32,7 @@ class DetailViewController: UIViewController {
         self.img = imgStr
         self.info = info
         self.name = name
-        
-       
+ 
         
     }
     
