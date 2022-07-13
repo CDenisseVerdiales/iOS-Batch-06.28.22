@@ -94,11 +94,9 @@ class NetworkManager {
         guard let gen = self.createNameLink(dict: generationDict) else { return nil }
      
         guard let Id = base["id"] as? Int else { return nil }
-
     
         guard let moveDamageClassDict = base["move_damage_class"] as? [String: Any] else { return nil }
         guard let movDamageC = self.createNameLink(dict: moveDamageClassDict) else { return nil }
-      
         
         guard let movesArr = base["moves"] as? [[String: Any]] else { return nil }
         var finalMoves: [NameLink] = []
