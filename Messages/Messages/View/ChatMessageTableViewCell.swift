@@ -61,7 +61,7 @@ class ChatMessageTableViewCell: UITableViewCell {
     }
     
     func configure(with msg: MessagesAttributes, index:Int ){
-            self.messageContent.text = msg.content(for: index)
+        self.messageContent.text = "\(msg.userSenderId(for: index) ?? "") \n\n \(msg.content(for: index) ?? "")"
   
     }
     

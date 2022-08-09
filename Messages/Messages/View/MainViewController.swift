@@ -41,7 +41,8 @@ class MainViewController: UIViewController {
             nav.modalPresentationStyle = .fullScreen
             present(nav, animated: true)
         }else{
-            let vc = ChatViewController(userInfo: userInfo(userId: "\(UserDefaults())"))
+            
+            let vc = ChatViewController(userInfo: userInfo(userId: "\(UserDefaults() )"))
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
             present(nav, animated: true)
