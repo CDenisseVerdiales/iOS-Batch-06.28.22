@@ -23,9 +23,13 @@ struct RickAndMortyView<T: RickAndMortyListViewModelType>: View{
                 ProgressView()
                     .frame(width: 100, height: 100, alignment: .center)
             }
-                .padding([.top, .bottom, .trailing], 8)
-            Text("Name: \(rickAndMortyListVM.rickAndMorty[index].name)")
-                .padding([.top, .bottom, .trailing], 8)
+            VStack{
+                
+                   // .padding([.top, .bottom, .trailing], 8)
+                Text("Name: \(rickAndMortyListVM.rickAndMorty[index].name)")
+                Text("Gender: \(rickAndMortyListVM.rickAndMorty[index].gender)")
+                   // .padding([.top, .bottom, .trailing], 8)
+            }
         }
         .listRowInsets(EdgeInsets(top: 0, leading: 2, bottom: 0, trailing: 0))
     }

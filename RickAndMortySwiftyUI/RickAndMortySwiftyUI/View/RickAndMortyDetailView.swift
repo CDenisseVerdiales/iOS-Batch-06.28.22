@@ -15,18 +15,13 @@ struct RickAndMortyDetailView<T: RickAndMortyListViewModelType>: View{
     var body: some View{
         VStack{
             RickAndMortyView(rickAndMortyListVM: self.rickAndMortyVM, index: index)
+                .padding([.top, .bottom, .trailing], 8)
             Text("Status: \(self.rickAndMortyVM.rickAndMorty[index].species)")
-            Text("Gender: \(self.rickAndMortyVM.rickAndMorty[index].gender)")
             Text("Origin: \(self.rickAndMortyVM.rickAndMorty[index].origin.name)")
             Text("Location: \(self.rickAndMortyVM.rickAndMorty[index].location.name)")
             Text("Species: \(self.rickAndMortyVM.rickAndMorty[index].species)")
-                .padding()
-            Spacer()
-            Button("Back"){
-                self.presentationMode.wrappedValue.dismiss()
-            }
+               
         }
-        .navigationBarBackButtonHidden(true)
     }
 }
 
